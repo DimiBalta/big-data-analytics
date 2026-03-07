@@ -1,21 +1,21 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_squared_error, mean_absolute_error, root_mean_squared_error
+from sklearn.metrics import mean_squared_error
+from sklearn.metrics import mean_absolute_error
+from sklearn.metrics import root_mean_squared_error
 
-# Predict house prices (data/housing.csv)
 
-FILE_PATH = "data/housing.csv"
+## predict house prices (data/housing.csv)
 
-data = pd.read_csv(FILE_PATH)
+data = pd.read_csv("data/housing.csv")
 
-# Quick overviewe of the dataset
+# quick overview of the dataset 
 
-print(data.head())
+print(data.head()) # default lines 5 
+print(data.info())  # per column the data type, to pre-process the data, to decide which model is the proper one for my data
 
-# Quick overview of the descriptive analytics of the dataset
-
-print(data.info())
+# quick overview of the descriptive analytics of the dataset
 
 # mean, std, min, max, 25%, 50%, 75%
 
