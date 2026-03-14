@@ -1,0 +1,45 @@
+// MongoDB Playground
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+// The current database to use.
+use("analytics");
+
+// Find a document in a collection.
+db.getCollection("clickstream").insertMany([
+{
+"user_id": 101,
+"page": "home",
+"device": "mobile",
+"time_spent": 5,
+"country": "UK"
+},
+{
+"user_id": 102,
+"page": "product",
+"device": "desktop",
+"time_spent": 12,
+"country": "UK"
+},
+{
+"user_id": 103,
+"page": "checkout",
+"device": "mobile",
+"time_spent": 8,
+"country": "France"
+},
+{
+"user_id": 104,
+"page": "home",
+"device": "tablet",
+"time_spent": 4,
+"country": "Germany"
+},
+{
+"user_id": 105,
+"page": "product",
+"device": "mobile",
+"time_spent": 15,
+"country": "UK"
+}
+
+]);
